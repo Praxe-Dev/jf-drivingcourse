@@ -7,16 +7,14 @@ import Container from '@mui/material/Container'
 import Navbar from './components/Navbar'
 // import Calendar from 'react-calendar';
 
+// Primary color : #085aa5
+
 function App () {
   return (
     <div>
       <Navbar />
-      <Container maxWidth='lg'>
-        {/* <Navbar />  */}
         <Header />
-        {/* <div className="divider"></div> */}
         <Content />
-      </Container>
     </div>
   )
 }

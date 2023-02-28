@@ -4,11 +4,14 @@ body {
 }
 
 #navbar {
-  img {
-    @media (max-width: 767px) {
-      display: none;
-    }
+  #title {
+    text-align: center;
   }
+  // img {
+  //   @media (max-width: 767px) {
+  //     display: none;
+  //   }
+  // }
 }
 
 #header {
@@ -27,7 +30,7 @@ body {
   }
 }
 
-#content {
+#grid-content {
   h5 {
     color: #1976d2  ;
   }

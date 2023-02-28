@@ -12,17 +12,17 @@ import MenuIcon from '@mui/icons-material/Menu'
 export default function NavbarTest () {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
-        <Toolbar>
+      <AppBar id='navbar' position='static'>
+        <Toolbar sx={{bgcolor: '#085aa5'}}>
           <Container maxWidth='lg'>
-          <img
+            <Typography variant='h6' component='div' id='title' sx={{ flexGrow: 1 }}>
+              <img
                 // noWrap
                 // sx={{display: {xs: 'flex', md:'none'}}}
-                style={{ height: 90, paddingRight: 20 }}
+                style={{ height: 45, paddingRight: 20 }}
                 src={logo}
                 alt='Lolgo'
               />
-            <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
               Jean-François
             </Typography>
           </Container>
