@@ -1,18 +1,24 @@
-import React from 'react';
+import React from 'react'
+// import Navbar from './components/NavbarOld'
+import './App.scss'
+import Header from './components/Header'
+import Content from './components/Content'
+import Container from '@mui/material/Container'
 import Navbar from './components/Navbar'
-import './App.scss';
-import Header from './components/Header';
-import Content from './components/Content';
+// import Calendar from 'react-calendar';
 
-function App() {
+function App () {
   return (
     <div>
-      <Navbar /> 
-      <Header />
-      {/* <div className="divider"></div> */}
-      <Content />
+      <Navbar />
+      <Container maxWidth='lg'>
+        {/* <Navbar />  */}
+        <Header />
+        {/* <div className="divider"></div> */}
+        <Content />
+      </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
