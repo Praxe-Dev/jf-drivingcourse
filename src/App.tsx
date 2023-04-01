@@ -6,6 +6,8 @@ import Content from './components/Content'
 import Calendar from './components/Calendar'
 import Container from '@mui/material/Container'
 import Navbar from './components/Navbar'
+import About from './components/About'
+import Footer from './components/Footer'
 // import { Calendar } from 'react-calendar'
 // import Calendar from 'react-calendar';
 
@@ -18,6 +20,8 @@ function App () {
         <Header />
         <Content />
         <Calendar />
+        <About />
+        <Footer />
     </div>
   )
 }

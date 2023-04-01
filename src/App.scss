@@ -1,6 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+
+}
+
+.MuiDialogActions-root {
+  display: none;
 }
 
 #navbar {
@@ -8,13 +13,13 @@ body {
     text-align: center;
   }
   // img {
-  //   @media (max-width: 767px) {
-  //     display: none;
-  //   }
-  // }
-}
-
-#header {
+    //   @media (max-width: 767px) {
+      //     display: none;
+      //   }
+      // }
+    }
+    
+    #header {
   padding: 10px;
   padding-top: 40px;
   margin-bottom: 40px;
@@ -31,12 +36,21 @@ body {
 }
 
 #grid-content {
-  h5 {
+  h3 {
     color: #1976d2  ;
   }
   img {
     max-width: 75px;
   }
+}
+
+#calendar {
+  button {
+    display: none;
+  }
+  // .PrivateDatePickerToolbar-penIcon {
+  //   display: none;
+  // }
 }
 
 /* .App {
