@@ -10,7 +10,7 @@ import { Badge, Container, Grid, styled } from '@mui/material'
 import Typography from '@mui/material/Typography'
 import { Moment } from 'moment';
 import CheckIcon from '@mui/icons-material/Check';
-import { PickersDay } from '@mui/x-date-pickers'
+import { PickersDay } from '@mui/x-date-pickers';
 
 const StyledDay = styled('div')(({ theme }) => ({
 
@@ -34,7 +34,7 @@ const StyledDay = styled('div')(({ theme }) => ({
 
 
 
-let Calendar = () => {
+let CalendarOld = () => {
   const [highlightedDays, setHighlightedDays] = useState([1, 2, 13]);
   const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'))
 
@@ -97,4 +97,4 @@ let Calendar = () => {
   )
 }
 
-export default Calendar
+export default CalendarOld

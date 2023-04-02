@@ -4,8 +4,41 @@ body {
 
 }
 
+.react-calendar__month-view__days__day--weekend {
+  /* color: #d10000; */
+  color: #000;
+}
+
+// .react-calendar__month-view__days__day--weekend {
+//   color: black;
+// }
+
+.react-calendar .free {
+  background-color: lightgreen;
+}
+
+.react-calendar .partial {
+  background-color: orange;
+}
+
+.react-calendar .full {
+  background-color: red;
+}
+
 .MuiDialogActions-root {
   display: none;
+}
+
+#booking {
+  background-color: #397bb7;
+  padding: 20px;
+  #booking-info {
+    color: white
+  }
+}
+
+#infos {
+  padding: 30px;
 }
 
 #navbar {

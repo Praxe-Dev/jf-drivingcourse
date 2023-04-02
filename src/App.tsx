@@ -3,11 +3,13 @@ import React from 'react'
 import './App.scss'
 import Header from './components/Header'
 import Content from './components/Content'
-import Calendar from './components/Calendar'
+// import Calendar from './components/CalendarOld'
 import Container from '@mui/material/Container'
 import Navbar from './components/Navbar'
-import About from './components/About'
+import About from './components/Infos'
 import Footer from './components/Footer'
+import CalendarDisplay from './components/CalendarDisplay'
+import Booking from './components/Booking'
 // import { Calendar } from 'react-calendar'
 // import Calendar from 'react-calendar';
 
@@ -19,7 +21,7 @@ function App () {
       <Navbar />
         <Header />
         <Content />
-        <Calendar />
+        <Booking />
         <About />
         <Footer />
     </div>
