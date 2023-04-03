@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 import Calendar from 'react-calendar'
+import BookFormModal from './BookFormModal'
 import { addDays, differenceInCalendarDays } from 'date-fns'
 
 // import { CalendarTileProperties } from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
+// import 'react-calendar/dist/Calendar.css'
 // import { CalendarProps } from 'react-calendar';
 
-function CalendarDisplay () {
+type CalendarDisplayProps = {
+  openModal: any,
+  closeModal: any
+  
+}
+
+const CalendarDisplay = ({openModal, closeModal}: CalendarDisplayProps) => {
   const now = new Date()
   const fullDays: Date[] = []
   const partialDays: Date[] = []
@@ -15,9 +22,9 @@ function CalendarDisplay () {
 
   const [date, setDate] = useState<any>(addDays(new Date(),1))
 
-  const clickDay = ({value, event}: any) => {
-    console.log(value);
-    alert(`clicked day: ${value}`);
+  const handleClickOpen = ({value, event}: any) => {
+    console.log(date);
+    alert(`clicked day: ${date}`);
   }
 
   const isSameDay = (a: Date, b: Date) => {
@@ -40,13 +47,13 @@ function CalendarDisplay () {
   return (
     <div>
       <Calendar
-        // onChange={setDate}
-        // value={date}
+        onChange={setDate}
+        value={date}
         tileClassName={StyleDay}
         locale='fr-FR'
         minDate={addDays(new Date(), 1)}
         maxDetail='month'
-        onClickDay={clickDay}
+        onClickDay={openModal}
         // tileContent={}
       />
     </div>
