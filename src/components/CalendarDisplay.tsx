@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import Calendar from 'react-calendar'
 import BookFormModal from './BookFormModal'
 import { addDays, differenceInCalendarDays } from 'date-fns'
@@ -9,11 +9,12 @@ import { addDays, differenceInCalendarDays } from 'date-fns'
 
 type CalendarDisplayProps = {
   openModal: any,
-  closeModal: any
-  
+  closeModal: any,
+  choseDate: Date | undefined,
+  setChosenDate: Dispatch<SetStateAction<Date | undefined>>
 }
 
-const CalendarDisplay = ({openModal, closeModal}: CalendarDisplayProps) => {
+const CalendarDisplay = ({openModal, closeModal, choseDate, setChosenDate}: CalendarDisplayProps) => {
   const now = new Date()
   const fullDays: Date[] = []
   const partialDays: Date[] = []
@@ -23,9 +24,17 @@ const CalendarDisplay = ({openModal, closeModal}: CalendarDisplayProps) => {
   const [date, setDate] = useState<any>(addDays(new Date(),1))
 
   const handleClickOpen = ({value, event}: any) => {
+    setChosenDate(date);
+    setDate(date);
     console.log(date);
-    alert(`clicked day: ${date}`);
   }
+
+  // useEffect(() => {
+  //   if (date !== undefined) {
+  //     console.log(date)
+  //     openModal();
+  //   }
+  // }, [setDate])
 
   const isSameDay = (a: Date, b: Date) => {
     return differenceInCalendarDays(a, b) === 0
