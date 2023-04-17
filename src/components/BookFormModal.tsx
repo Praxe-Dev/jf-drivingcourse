@@ -8,7 +8,6 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Container, FormControlLabel, Grid, Radio, RadioGroup } from '@mui/material';
 import { ChangeEvent, useState } from 'react';
-import { log } from 'console';
 
 type FormModalProps = {
   isOpen: boolean,

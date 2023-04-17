@@ -1,5 +1,5 @@
+// import react from 'react'
 import { Box, Container } from '@mui/material'
-import react from 'react'
 
 let Header = () => {
   return (

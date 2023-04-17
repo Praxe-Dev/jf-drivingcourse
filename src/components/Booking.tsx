@@ -1,5 +1,5 @@
 import { Container, Grid } from '@mui/material'
-import React, { useEffect } from 'react'
+import React from 'react'
 import CalendarDisplay from './CalendarDisplay'
 import BookingInfo from './BookingInfo'
 

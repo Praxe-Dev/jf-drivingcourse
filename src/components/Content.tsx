@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from '../resources/driving-school.png'
-import { Box, Container, Grid } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 // Icons
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -39,7 +38,7 @@ let Content = () => {
           <h3>Point de rendez-vous</h3>
           <p>
             Le point de rendez-vous pour mes cours est{' '}
-            <a href='https://goo.gl/maps/WviVnwxAva7pNQLG9' target={'_blank'}>
+            <a href='https://goo.gl/maps/WviVnwxAva7pNQLG9' target={'_blank'} rel="noreferrer">
               Drive-Cool
             </a>
             .
