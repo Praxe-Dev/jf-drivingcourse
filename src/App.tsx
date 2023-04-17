@@ -10,10 +10,6 @@ import About from './components/Infos'
 import Footer from './components/Footer'
 import CalendarDisplay from './components/CalendarDisplay'
 import Booking from './components/Booking'
-// import { Calendar } from 'react-calendar'
-// import Calendar from 'react-calendar';
-
-// Primary color : #085aa5
 
 function App () {
   return (

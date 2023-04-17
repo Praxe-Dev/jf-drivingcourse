@@ -8,18 +8,22 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Container, FormControlLabel, Grid, Radio, RadioGroup } from '@mui/material';
 import { ChangeEvent, useState } from 'react';
+import { log } from 'console';
 
 type FormModalProps = {
-  openModal: any,
+  isOpen: boolean,
   onCloseModal: any,
-  isOpen: boolean;
+  chosenDate: Date | undefined;
 }
 
-const BookFormModal = ({isOpen, openModal, onCloseModal}: FormModalProps) => {
+const BookFormModal = ({isOpen, chosenDate, onCloseModal}: FormModalProps) => {
+
+  // console.log(chosenDate);
+
   const [isPhoneValid, setIsPhoneValid] = useState<boolean>(false);
 
   const handlePhoneChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    console.log(e.target.value.length > 0);
+    // console.log(e.target.value.length > 0);
     setIsPhoneValid(e.target.value.length > 0) 
   }
 
@@ -29,8 +33,7 @@ const BookFormModal = ({isOpen, openModal, onCloseModal}: FormModalProps) => {
           <DialogTitle>Réserver un cours</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              {/* <h1>Réserver un cours</h1> */}
-              <h2>Choisissez la plage horaire</h2>
+              <h2>Choisissez la plage horaire pour la date du {chosenDate?.toString()}</h2>
               <RadioGroup name='use-radio-group'>
                 <FormControlLabel
                   value='08:00 - 10:00'

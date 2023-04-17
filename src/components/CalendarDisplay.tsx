@@ -1,40 +1,31 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { Dispatch, SetStateAction, useState } from 'react'
 import Calendar from 'react-calendar'
-import BookFormModal from './BookFormModal'
 import { addDays, differenceInCalendarDays } from 'date-fns'
-
-// import { CalendarTileProperties } from 'react-calendar'
-// import 'react-calendar/dist/Calendar.css'
-// import { CalendarProps } from 'react-calendar';
 
 type CalendarDisplayProps = {
   openModal: any,
   closeModal: any,
-  choseDate: Date | undefined,
+  chosenDate: Date | undefined,
   setChosenDate: Dispatch<SetStateAction<Date | undefined>>
 }
 
-const CalendarDisplay = ({openModal, closeModal, choseDate, setChosenDate}: CalendarDisplayProps) => {
+const CalendarDisplay: React.FC<CalendarDisplayProps> = ({openModal, closeModal, chosenDate, setChosenDate}) => {
   const now = new Date()
   const fullDays: Date[] = []
   const partialDays: Date[] = []
+
+  // Test Data
   fullDays.push(addDays(now, 1), addDays(now, 3))
   partialDays.push(addDays(now, 2), addDays(now, 5), addDays(now, 4))
 
   const [date, setDate] = useState<any>(addDays(new Date(),1))
 
+  // Types not working?
+  // const handleClickOpen = ({value, event}: {value:Date, event: React.SyntheticEvent<HTMLButtonElement, MouseEvent>}) => {
   const handleClickOpen = ({value, event}: any) => {
     setChosenDate(date);
-    setDate(date);
-    console.log(date);
+    openModal();
   }
-
-  // useEffect(() => {
-  //   if (date !== undefined) {
-  //     console.log(date)
-  //     openModal();
-  //   }
-  // }, [setDate])
 
   const isSameDay = (a: Date, b: Date) => {
     return differenceInCalendarDays(a, b) === 0
@@ -42,7 +33,6 @@ const CalendarDisplay = ({openModal, closeModal, choseDate, setChosenDate}: Cale
 
   const StyleDay = ({ date, view }: any): any => {
     if (view === 'month') {
-
       if (fullDays.find(dDate => isSameDay(dDate, date))) {
         return 'full'
       } else if (partialDays.find(dDate => isSameDay(dDate, date))) {
@@ -62,8 +52,7 @@ const CalendarDisplay = ({openModal, closeModal, choseDate, setChosenDate}: Cale
         locale='fr-FR'
         minDate={addDays(new Date(), 1)}
         maxDetail='month'
-        onClickDay={openModal}
-        // tileContent={}
+        onClickDay={handleClickOpen}
       />
     </div>
   )

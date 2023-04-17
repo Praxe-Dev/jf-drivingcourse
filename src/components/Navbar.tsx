@@ -9,16 +9,16 @@ import IconButton from '@mui/material/IconButton'
 import Container from '@mui/material/Container'
 import MenuIcon from '@mui/icons-material/Menu'
 
-export default function NavbarTest () {
+export default function Navbar () {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box id='title-navbar'>
       <AppBar id='navbar' position='static'>
-        <Toolbar sx={{bgcolor: '#085aa5'}}>
+        {/* <Toolbar id='Toolbar' sx={{bgcolor: '#085aa5'}}> */}
+        <Toolbar id='Toolbar'>
           <Container maxWidth='lg'>
-            <Typography variant='h6' component='div' id='title' sx={{ flexGrow: 1 }}>
+            {/* <Typography variant='h6' component='div' id='title' sx={{ flexGrow: 1 }}> */}
+            <Typography variant='h6' component='div' id='title' >
               <img
-                // noWrap
-                // sx={{display: {xs: 'flex', md:'none'}}}
                 style={{ height: 45, paddingRight: 20 }}
                 src={logo}
                 alt='Lolgo'

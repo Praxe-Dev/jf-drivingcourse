@@ -1,9 +1,51 @@
+$primary-color: #085aa5;
+$sub-color: #b4e6ff;
+$primary-color-bis: #397bb7;
+$sub-color-bis: #b4e6ff;
+$green-icon: green;
+
+$footer-padding: 30px;
+
+// General
 body {
   margin: 0;
   padding: 0;
 
 }
 
+// Icon
+#icon-phone {
+  color: $green-icon;
+  margin-right: 4px;
+}
+
+// Content
+#content {
+  .content-item {
+    h3 {
+      color: $primary-color-bis;
+
+    }
+    svg {
+      font-size: 60px;
+      color: $primary-color-bis;
+    }
+  }
+}
+
+// Footer
+#footer-left {
+  padding-top: $footer-padding;
+  padding-bottom: $footer-padding; 
+  backgroundColor: 'lightgrey';
+}
+
+#footer-right {
+  padding-top: $footer-padding;
+  padding-bottom: $footer-padding; 
+  background-color: $primary-color-bis;
+  color: white
+}
 
 .react-calendar .free {
   background-color: lightgreen;
@@ -36,7 +78,7 @@ body {
   margin: -0.5em;
 }
 
-.react-calendar--doubleView .react-calendar__viewContainer > * {
+.react-calendar--doubleView .react-calendar__viewContainer>* {
   width: 50%;
   margin: 0.5em;
 }
@@ -149,16 +191,6 @@ body {
   background: #a9d4ff;
 }
 
-// .react-calendar__tile--active {
-//   background: #006edc00;
-//   color: white;
-// }
-
-// .react-calendar__tile--active:enabled:hover,
-// .react-calendar__tile--active:enabled:focus {
-//   background: #006edc00;
-// }
-
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
@@ -182,10 +214,20 @@ body {
 }
 
 #booking {
-  background-color: #397bb7;
+  // background-color: #397bb7;
+  background-color: $primary-color-bis;
   padding: 20px;
+
   #booking-info {
     color: white
+  }
+}
+
+#title-navbar {
+  flex-grow: 1;
+  background-color: $primary-color-bis;
+  #navbar {
+    background-color: $primary-color-bis;
   }
 }
 
@@ -197,22 +239,25 @@ body {
   #title {
     text-align: center;
   }
+
   // img {
-    //   @media (max-width: 767px) {
-      //     display: none;
-      //   }
-      // }
-    }
-    
-    #header {
+  //   @media (max-width: 767px) {
+  //     display: none;
+  //   }
+  // }
+}
+
+#header {
   padding: 10px;
   padding-top: 40px;
   margin-bottom: 40px;
+
   h1 {
     font-size: 40px;
     padding: 0;
     margin: 0;
   }
+
   h2 {
     font-size: 30px;
     padding: 0;
@@ -222,8 +267,10 @@ body {
 
 #grid-content {
   h3 {
-    color: #1976d2  ;
+    // color: #1976d2;
+    color: $primary-color-bis;
   }
+
   img {
     max-width: 75px;
   }
@@ -233,46 +280,4 @@ body {
   button {
     display: none;
   }
-  // .PrivateDatePickerToolbar-penIcon {
-  //   display: none;
-  // }
 }
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

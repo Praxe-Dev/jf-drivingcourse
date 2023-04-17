@@ -13,8 +13,9 @@ function Contact () {
       <p>N° de compte bancaire: BEXX XXXX XXXX XXXX</p>
       <Divider sx={{ marginBottom: 2 }} />
       <p>
-        <CallIcon sx={{ color: 'green', marginRight: 2 }} />
-        0472 83 48 80
+        {/* <CallIcon id='icon-phone' sx={{ color: 'green', marginRight: 2 }} /> */}
+        <CallIcon id='icon-phone' />
+        <a href='tel:+32472834880'>0472/83.48.80</a>
       </p>
     </div>
   )

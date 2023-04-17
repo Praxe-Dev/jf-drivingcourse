@@ -1,5 +1,5 @@
 import { Container, Grid } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import CalendarDisplay from './CalendarDisplay'
 import BookingInfo from './BookingInfo'
 
@@ -12,7 +12,6 @@ function Booking () {
   )
 
   const handleClickOpen = () => {
-    console.log(chosenDate)
     setOpen(true)
   }
 
@@ -31,7 +30,7 @@ function Booking () {
             <CalendarDisplay
               openModal={handleClickOpen}
               closeModal={handleClose}
-              choseDate={chosenDate}
+              chosenDate={chosenDate}
               setChosenDate={setChosenDate}
             />
           </Grid>
@@ -39,7 +38,7 @@ function Booking () {
       </Container>
       <BookFormModal
         isOpen={open}
-        openModal={handleClickOpen}
+        chosenDate={chosenDate}
         onCloseModal={handleClose}
       />
     </div>
