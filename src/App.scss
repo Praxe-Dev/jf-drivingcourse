@@ -33,11 +33,27 @@ body {
   }
 }
 
+// Booking
+#booking-info-button {
+  // display: block;
+  background-color: #fff;
+  margin: 40px auto;
+}
+
+#appointment-schedule {
+  border: 0;
+  width: 100%;
+  height: 660px;
+  background-color: white;
+  scale: (1.10);
+  margin: 40px 20px;
+}
+
 // Footer
 #footer-left {
   padding-top: $footer-padding;
   padding-bottom: $footer-padding; 
-  backgroundColor: 'lightgrey';
+  background-color: 'lightgrey';
 }
 
 #footer-right {

@@ -14,6 +14,7 @@ function App () {
         <Header />
         <Content />
         <Booking />
+        {/* <TestComponent /> */}
         <About />
         <Footer />
     </div>
