@@ -39,6 +39,18 @@ body {
   }
 }
 
+#contact {
+  #contact-divider {
+    max-width: 80%;
+  }
+}
+
+#map-embed {
+  border: 0;
+  // max-width: 500px;
+  max-width: 100%;
+}
+
 #booking-info {
   @media (min-width: 600px) and (max-width: 6è00px) {
     margin: 0;

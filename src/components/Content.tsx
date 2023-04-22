@@ -18,13 +18,11 @@ let Content = () => {
         columnSpacing={4}
       >
         <Grid className='content-item' item xs={12} lg={3} sm={6}>
-          {/* <CalendarTodayIcon sx={{fontSize: 60, color: iconColor}} /> */}
           <CalendarTodayIcon />
           <h3>Plages Horaires</h3>
           <p>Je donne mes cours les vendredis et samedis par tranches de 2h.</p>
         </Grid>
         <Grid className='content-item' item xs={12} lg={3} sm={6}>
-          {/* <AttachMoneyIcon sx={{fontSize: 60, color: iconColor}} /> */}
           <AttachMoneyIcon />
           <h3>Tarifs</h3>
           <p>
@@ -33,13 +31,12 @@ let Content = () => {
           </p>
         </Grid>
         <Grid className='content-item' item xs={12} lg={3} sm={6}>
-          {/* <MapOutlinedIcon sx={{fontSize: 60, color: iconColor}} /> */}
           <MapOutlinedIcon />
           <h3>Point de rendez-vous</h3>
           <p>
             Le point de rendez-vous pour mes cours est{' '}
-            <a href='https://goo.gl/maps/WviVnwxAva7pNQLG9' target={'_blank'} rel="noreferrer">
-              Drive-Cool
+            <a href='https://goo.gl/maps/Nf1BNkXd21yGxwAWA' target={'_blank'} rel="noreferrer">
+              au centre des Permis de conduire à Tihange ou dans les alentours 
             </a>
             .
           </p>
