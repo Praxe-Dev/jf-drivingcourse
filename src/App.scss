@@ -19,6 +19,17 @@ body {
   margin-right: 4px;
 }
 
+.important {
+  font-weight: bold;
+  color: red;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+}
+
 // #title {
 //   background-color: red;
 //   align-content: center;

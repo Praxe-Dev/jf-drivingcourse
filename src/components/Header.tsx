@@ -9,10 +9,9 @@ let Header = () => {
           {/* <div id='header' className='blue lighten-5'> */}
           <div className='container'>
             <h1>Jean-François VERBRACKEN</h1>
-            <h2>Formations permis de conduire</h2>
+            <h2>Formations à la conduite</h2>
             <p>
-              Bienvenu sur mon site Web. Ici, vous pouvez prendre rendez-vous
-              avec moi pour vos cours de formation permis de conduire.
+              Je m'appelle Verbracken Jean-François, je suis moniteur à l'apprentissage de la conduite pour l'obtention du permis B, je travaille à temps plein pour une auto-école comme statut indépendant et je donne des leçons de conduite pendant mon temps libre <em>uniquement dans la région de HUY</em>
             </p>
           </div>
         </div>

@@ -20,7 +20,7 @@ let Content = () => {
         <Grid className='content-item' item xs={12} lg={3} sm={6}>
           <CalendarTodayIcon />
           <h3>Plages Horaires</h3>
-          <p>Je donne mes cours les vendredis et samedis par tranches de 2h.</p>
+          <p>Je donne mes cours tout au long de la semaine !</p>
         </Grid>
         <Grid className='content-item' item xs={12} lg={3} sm={6}>
           <AttachMoneyIcon />

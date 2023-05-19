@@ -7,15 +7,14 @@ function Contact () {
     <div id='contact'>
       <h2>Contact</h2>
       <p>
-        <strong>Jean-François</strong>
+        <strong>Verbracken Jean-François</strong>
       </p>
-      <p>TVA: BEXXXX.XXX.XXX</p>
-      <p>N° de compte bancaire: </p>
-      <p>BEXX XXXX XXXX XXXX</p>
+      <p>TVA: BE 0770809708</p>
+      <p>N° de compte bancaire: BE03 1030 7530 2784</p>
       <Divider id='contact-divider' sx={{ marginBottom: 2 }} />
       <p>
         <CallIcon id='icon-phone' />
-        <a href='tel:+32496064352'>0496/06.4352</a>
+        <a href='tel:+32496064352'>0496/06.43.52</a>
       </p>
     </div>
   )
