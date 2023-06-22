@@ -22,7 +22,7 @@ function About() {
             </li>
           </ul>
           <p>
-            <span className='important'>Conditions :</span> avoir un permis privoisire M36 ou M12 en cours de validité
+            <span className='important'>Conditions :</span> avoir un permis provisoire M36 ou M12 en cours de validité
           </p>
           <p>
             <em>Attention</em> que cette filière n'est pas valable pour des heures obligatoires (6h après 2 échecs, 20h pour pouvoir rouler seul ou 30h pour présenter l'examen en accès direct).
