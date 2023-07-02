@@ -18,7 +18,7 @@ type FormModalProps = {
 const BookFormModal = ({isOpen, chosenDate, onCloseModal}: FormModalProps) => {
 
   // console.log(chosenDate);
-
+  // Test
   const [isPhoneValid, setIsPhoneValid] = useState<boolean>(false);
 
   const handlePhoneChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
